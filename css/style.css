@@ -1,0 +1,110 @@
+/* =================
+common css
+==================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 860px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+img{
+    max-width: 100%;
+}
+/* =======================
+nav-bar start from here
+========================== */
+.nav-bar{
+    width: 100%;
+    padding: 20px 0;
+}
+.menu-bar{
+    width: 100%;
+    text-align: right;
+}
+.menu-bar ul li{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    
+}
+.menu-bar ul li a{
+    color: gray;
+    text-transform: uppercase;
+}
+.menu-bar ul li::after{
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: chocolate;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    opacity: 0;
+}
+.menu-bar ul li:nth-child(1)::after{
+    left: 5px;
+    width: 80px;
+}
+.menu-bar ul li:nth-child(2)::after{
+    left: 20px;
+    width: 80px;
+}
+.menu-bar ul li:nth-child(3)::after{
+    left: 12px;
+}
+.menu-bar ul li:nth-child(4)::after{
+    left: 10px;
+}
+/* .menu-bar ul li:last-child::after{
+    display: none;
+} */
+.menu-bar ul li a:hover{
+    color: black;
+    
+}
+.menu-bar ul li:hover::after{
+    opacity: 1;
+}
+/* content section start from here */
+.content-section{
+    width: 100%;
+}
+.content-section .content {
+    padding: 0 60px;
+}
+.content-section .content .title{
+    color: gray;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.content-section .content h1{
+    color: gray;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.content-section .content input{
+    margin: 20px 0;
+    width: 80%;
+    height: 100%;
+    font-size: 18px;
+    border: none;
+}
+.content-section .content input::placeholder{
+    font-size: 20px;
+}
+.content-section .content input:focus{
+    outline: none;
+}
